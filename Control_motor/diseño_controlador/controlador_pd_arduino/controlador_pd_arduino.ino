@@ -43,7 +43,7 @@ std_msgs::Int16 IntPWM_msg; // To check pwm values
 
 // Subscriber callback (receives desired RPM)
 void rpmTargetCallback(const std_msgs::Float32 &msg){
-  desired_rpm = msg.data;
+  desired_rpm = msg.data * 3.11;
 }
 
 // ROS publishers and subscriber
